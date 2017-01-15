@@ -504,7 +504,7 @@ dumpAMF(AMFObject *obj, char *ptr, AVal *argv, int *argc)
   int i, ac = *argc;
   const char opt[] = "NBSO Z";
 
-  for (i = 0; i < obj->o_num; i++)
+  for (i=0; i < obj->o_num; i++)
     {
       AMFObjectProperty *p = &obj->o_props[i];
       if ((p->p_type == AMF_ECMA_ARRAY) || (p->p_type == AMF_STRICT_ARRAY))
